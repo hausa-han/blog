@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hausahan.blog.mapper.UserMapper">
+
+    <select id="getMenuIds" resultType="java.lang.Long">
+        select distinct
+            rm.menu_id
+        from user_role ur
+        left join role_menu rm on ur.role_id = rm.role_id
+        where ur.user_id = #{userId}
+    </select>
+
+    <select id="listByMenuId" resultType="cn.hausahan.blog.entity.User">
+        select distinct
+            su.*
+        from user_role ur
+        left join role_menu rm on ur.role_id = rm.role_id
+        left join user u on ur.user_id = u.id
+        where rm.menu_id = #{menuId}
+    </select>
+
+</mapper>
