@@ -20,7 +20,6 @@ CREATE TABLE `user` (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
--- -BBGW@blog.5721
 INSERT INTO `user` VALUES ('1', 'Hausa_', '$2a$10$n2vGPN1iUwGq97fw7mtbFe80jwX0i9fWJdYvvBS/exjuGumuJPfPC', '2021-11-14 00:00:00', '2021-11-14 00:00:00', '572157852@qq.com', '2021-11-14 00:00:00', '0');
 
 
