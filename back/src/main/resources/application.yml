@@ -2,17 +2,17 @@ spring:
   application:
     name: back
   datasource:
-    url: jdbc:mysql://175.24.9.38:3306/blog?useSSL=false&characterEncoding=UTF-8
-    username: username
+    url: jdbc:mysql://127.0.0.1:3306/blog?useSSL=false&characterEncoding=UTF-8
+    username: root
     password: password
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: none
   redis:
-    host: 175.24.9.38         # Redis服务器地址
+    host: 127.0.0.1         # Redis服务器地址
     port: 6379              # Redis服务器连接端口
-    password: "password"              # Redis服务器连接密码（默认为空）
+#    password: "password"              # Redis服务器连接密码（默认为空）
     jedis:
       pool:
         max-active: 8
