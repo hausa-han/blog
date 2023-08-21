@@ -13,5 +13,5 @@ This command will start a vue project manager server, and pop a web page,
 Then click the fourth tab left, then run the project through the green button.
 
 # How to ask question
-Just ask questions by Issues, or email me via the contacts in [http://hausahan.cn/index](http://hausahan.cn/index)
+Just ask questions by Issues, or email me via hausahan@gmail.com
 
